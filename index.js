@@ -42,16 +42,16 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/testbot01', function (req, res) {
+app.get('/testbot02', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C3ff2684a8d3d4349296f484f5235ff1a', respText);
+    client.pushMessage('Cf6b95cfe2520233832c6fbb338d6530d', respText);
     return res.sendStatus(200);
 });
-app.post('/testbot01', function (req, res) {
+app.post('/testbot02', function (req, res) {
     //log line messages
 
     const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('C3ff2684a8d3d4349296f484f5235ff1a', respText); 
+    client.pushMessage('Cf6b95cfe2520233832c6fbb338d6530d', respText); 
     return res.sendStatus(200);
 });
 //End of module
