@@ -38,7 +38,7 @@ app.post('/callback', (req, res) => {
 });
 
 app.get('/', function (request, response) {
-    response.send('This is SPWG monitoring application.');
+    response.send('This is MGL Line Bot.');
 });
 
 //Line push notification module
