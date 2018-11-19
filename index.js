@@ -42,16 +42,16 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/free-porpor', function (req, res) {
+app.get('/testbot01', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C54f3d73c0f0a62a08f1f1ae6c0b33326', respText);
+    client.pushMessage('C3ff2684a8d3d4349296f484f5235ff1a', respText);
     return res.sendStatus(200);
 });
-app.post('/free-porpor', function (req, res) {
+app.post('/testbot01', function (req, res) {
     //log line messages
 
     const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('C54f3d73c0f0a62a08f1f1ae6c0b33326', respText); 
+    client.pushMessage('C3ff2684a8d3d4349296f484f5235ff1a', respText); 
     return res.sendStatus(200);
 });
 //End of module
