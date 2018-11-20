@@ -42,16 +42,16 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/testbot02', function (req, res) {
+app.get('/LunHuay01dotcom', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('Cf6b95cfe2520233832c6fbb338d6530d', respText);
+    client.pushMessage('C5989c369b93f8454af4e16a2fb4a7ecd', respText);
     return res.sendStatus(200);
 });
-app.post('/testbot02', function (req, res) {
+app.post('/LunHuay01dotcom', function (req, res) {
     //log line messages
 
     const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('Cf6b95cfe2520233832c6fbb338d6530d', respText); 
+    client.pushMessage('C5989c369b93f8454af4e16a2fb4a7ecd', respText); 
     return res.sendStatus(200);
 });
 //End of module
